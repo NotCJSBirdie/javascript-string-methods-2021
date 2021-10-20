@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js"></script>
+    <title>Javascript String Methods</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="div1">
+      <h1>Javascript String Methods 2021</h1>
+      <h3>String methods help you to work with strings.</h3>
+    </div>
+    <div class="div11">
+      <h1>H</h1>
+    </div>
+    <div class="div12">
+      <h1>E</h1>
+    </div>
+
+    <div class="div13">
+      <h1>L</h1>
+    </div>
+    <div class="div14">
+      <h1>L</h1>
+    </div>
+    <div class="div15">
+      <h1>O</h1>
+    </div>
+    <div class="div2">
+      <h2>String Length</h2>
+      <p>The length property returns the length of a string:</p>
+    </div>
+    <div class="div21">
+      <p>let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";</p>
+      <p>txt.length // Returns 26</p>
+    </div>
+    <div class="div22">
+      <h2>Extracting String Parts</h2>
+
+      <p>There are 3 methods for extracting a part of a string:</p>
+      <p>slice(start, end)</p>
+      <p>substring(start, end)</p>
+      <p>substr(start, length)</p>
+    </div>
+    <div class="thirdrow">
+      <div class="div31">
+        <h3>The slice() Method</h3>
+        <p>
+          slice() extracts a part of a string and returns the extracted part in
+          a new string.
+        </p>
+
+        <p>
+          The method takes 2 parameters: the start position, and the end
+          position (end not included).
+        </p>
+
+        <p>
+          This example slices out a portion of a string from position 7 to
+          position 12 (13-1):
+        </p>
+      </div>
+      <div class="div32">
+        <h3>Example</h3>
+        <p>let str = "Apple, Banana, Kiwi";</p>
+        <p>str.slice(7, 13) // Returns Banana</p>
+      </div>
+      <div class="div33">
+        <p>
+          If a parameter is negative, the position is counted from the end of
+          the string.
+        </p>
+
+        <p>
+          This example slices out a portion of a string from position -12 to
+          position -6:
+        </p>
+
+        <h3>Example</h3>
+        <p>let str = "Apple, Banana, Kiwi";</p>
+        <p>str.slice(-12, -6) // Returns Banana</p>
+      </div>
+    </div>
+    <div class="div4">
+      <h3>The substring() Method</h3>
+      <p>substring() is similar to slice().</p>
+
+      <p>The difference is that substring() cannot accept negative indexes.</p>
+
+      <h3>Example</h3>
+      <p>let str = "Apple, Banana, Kiwi";</p>
+      <p>substring(7, 13) // Returns Banana</p>
+      <p>
+        If you omit the second parameter, substring() will slice out the rest of
+        the string.
+      </p>
+    </div>
+    <div class="div5">
+      <h3>The substr() Method</h3>
+      <p>substr() is similar to slice().</p>
+
+      <p>
+        The difference is that the second parameter specifies the length of the
+        extracted part.
+      </p>
+
+      <h3>Example</h3>
+      <p>let str = "Apple, Banana, Kiwi";</p>
+      <p>str.substr(7, 6) // Returns Banana</p>
+      <p>The result of res will be:</p>
+
+      <p>Banana</p>
+      <p></p>
+      <p>
+        <em>
+          If you omit the second parameter, substr() will slice out the rest of
+          the string.
+        </em>
+      </p>
+      <p></p>
+
+      <h3>Example</h3>
+      <p>let str = "Apple, Banana, Kiwi";</p>
+      <p>str.substr(7) // Returns Banana,Kiwi</p>
+      <p>
+        <em>
+          If the first parameter is negative, the position counts from the end
+          of the string.
+        </em>
+      </p>
+
+      <h3>Example</h3>
+      <p>let str = "Apple, Banana, Kiwi";</p>
+      <p>str.substr(-4) // Returns Kiwi</p>
+    </div>
+    <div class="div6">
+      <h3>Replacing String Content</h3>
+      <p>
+        The replace() method replaces a specified value with another value in a
+        string:
+      </p>
+
+      <h3>Example</h3>
+      <p>let text = "Please visit Microsoft!";</p>
+      <p>let newText = text.replace("Microsoft", "W3Schools");</p>
+      <em>
+        <p>
+          The replace() method does not change the string it is called on. It
+          returns a new string.
+        </p>
+      </em>
+
+      <em>
+        <p>
+          By default, the replace() method replaces only the first match:
+        </p>
+      </em>
+
+      <h3>Example</h3>
+      <p>let text = "Please visit Microsoft and Microsoft!";</p>
+      <p>let newText = text.replace("Microsoft", "W3Schools");</p>
+
+      <em>
+        <p>
+          By default, the replace() method is case sensitive. Writing MICROSOFT
+          (with upper-case) will not work:
+        </p>
+      </em>
+
+      <h3>Example</h3>
+      <p>let text = "Please visit Microsoft!";</p>
+      <p>let newText = text.replace("MICROSOFT", "W3Schools");</p>
+
+      <em>
+        <p>
+          To replace case insensitive, use a regular expression with an /i flag
+          (insensitive):
+        </p>
+      </em>
+
+      <h3>Example</h3>
+      <p>let text = "Please visit Microsoft!";</p>
+      <p>let newText = text.replace(/MICROSOFT/i, "W3Schools");</p>
+
+      <em>
+        <p>Note that regular expressions are written without quotes.</p>
+      </em>
+
+      <em>
+        <p>
+          To replace all matches, use a regular expression with a /g flag
+          (global match):
+        </p>
+      </em>
+
+      <h3>Example</h3>
+      <p>let text = "Please visit Microsoft and Microsoft!";</p>
+      <p>let newText = text.replace(/Microsoft/g, "W3Schools");</p>
+    </div>
+
+    <!-- 
+      Continue in doing the advanced CSS arrangements..
+      Converting to Upper and Lower Case
+    bookmark : Javascript Strings
+  -->
+    <div class="div7">
+      <h3>Converting to Upper and Lower Case</h3>
+      <p>A string is converted to upper case with toUpperCase():</p>
+
+      <h4>Example</h4>
+      <p>let text1 = "Hello World!"; // String</p>
+      <p>
+        let text2 = text1.toUpperCase(); // text2 is text1 converted to upper
+      </p>
+      <br />
+      <p>A string is converted to lower case with toLowerCase():</p>
+
+      <h4>Example</h4>
+      <p>let text1 = "Hello World!"; // String</p>
+      <p>
+        let text2 = text1.toLowerCase(); // text2 is text1 converted to lower
+      </p>
+    </div>
+    <div class="div8">
+      <h3>The concat() Method</h3>
+      <p>concat() joins two or more strings:</p>
+
+      <h4>Example</h4>
+      <p>let text1 = "Hello";</p>
+      <p>let text2 = "World";</p>
+      <p>let text3 = text1.concat(" ", text2);</p>
+      <h5>
+        The concat() method can be used instead of the plus operator. These two
+        lines do the same:
+      </h5>
+
+      <h4>Example</h4>
+      <p>text = "Hello" + " " + "World!";</p>
+      <p>text = "Hello".concat(" ", "World!");</p>
+      <h5>
+        All string methods return a new string. They don't modify the original
+        string.
+      </h5>
+      <h5>
+        Formally said: Strings are immutable: Strings cannot be changed, only
+        replaced.
+      </h5>
+    </div>
+    <div class="div9">
+      <h3>String.trim()</h3>
+      <p>The trim() method removes whitespace from both sides of a string:</p>
+
+      <h4>Example</h4>
+      <p>let text = " Hello World! ";</p>
+      <p>text.trim() // Returns "Hello World!"</p>
+    </div>
+    <div class="div10">
+      <h3>JavaScript String Padding</h3>
+      <p>
+        ECMAScript 2017 added two String methods: padStart and padEnd to support
+        padding at the beginning and at the end of a string.
+      </p>
+
+      <h4>Example</h4>
+      <p>let text = "5";</p>
+      <p>text.padStart(4,0) // Returns 0005</p>
+      <h4>Example</h4>
+      <p>let text = "5";</p>
+      <p>text.padEnd(4,0) // Returns 5000</p>
+      <h5>String Padding is not supported in Internet Explorer.</h5>
+
+      <h5>
+        Firefox and Safari were the first browsers with support for JavaScript
+        string padding:
+      </h5>
+    </div>
+    <div class="div40">
+        <h3>Extracting String Characters</h3>
+        <p>There are 3 methods for extracting string characters:</p>
+        
+        <ul>
+        <li>charAt(position)</li>
+        <li>charCodeAt(position)</li>
+        <li>Property access [ ]</li>
+        </ul>
+
+        <h3>The charAt() Method</h3>
+        <p>The charAt() method returns the character at a specified index (position) in a string:</p>
+        
+        <h4>Example</h4>
+        <p>let text = "HELLO WORLD";</p>
+        <p>text.charAt(0)           // Returns H</p>
+        <h3>The charCodeAt() Method</h3>
+        <p>The charCodeAt() method returns the unicode of the character at a specified index in a string:</p>
+        
+        <p>The method returns a UTF-16 code (an integer between 0 and 65535).</p>
+        
+        <h4>Example</h4>
+        <p>let text = "HELLO WORLD";</p>
+        
+        <p>text.charCodeAt(0)       // Returns 72</p>
+        <h3>Property Access</h3>
+        <p>ECMAScript 5 (2009) allows property access [ ] on strings:</p>
+        
+        <h4>Example</h4>
+        <p>let text = "HELLO WORLD";</p>
+        <p>text[0]                   // returns H</p>
+        <h5>Property access might be a little unpredictable:</h5>
+        <ul>
+        <li>It makes strings look like arrays (but they are not)</li>
+        <li>If no character is found, [ ] returns undefined, while charAt() returns an empty string.</li>
+        <li>It is read only. str[0] = "A" gives no error (but does not work!)</li>
+        </ul>
+        <h4>Example</h4>
+        <p>let text = "HELLO WORLD";</p>
+        <p>text[0] = "A"             // Gives no error, but does not work</p>
+        <p>text[0]                   // returns H</p>
+        <h5>If you want to work with a string as an array, you can convert it to an array.</h5>
+    </div>
+  </div class="div41">
+  <h3>Converting a String to an Array</h3>
+    <p>A string can be converted to an array with the split() method:</p>
+
+    <h4>Example</h4>
+      <p>text.split(",")          // Split on commas</p>
+      <p>text.split(" ")          // Split on spaces</p>
+      <p>text.split("|")          // Split on pipe</p>
+        <h5>If the separator is omitted, the returned array will contain the whole string in index [0].</h5>
+
+      <p>If the separator is "", the returned array will be an array of single characters:</p>
+
+    <h4>Example</h4>
+      <p>text.split("")           // Split in characters</p>
+  </div>
+  </body>
+</html>

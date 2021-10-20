@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+}
+.div1 {
+  font-family: "arial narrow";
+  text-align: center;
+  background-color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.div11 {
+  background-color: #18206f;
+  float: left;
+  height: auto;
+  width: 20%;
+  text-align: center;
+  font-family: "arial narrow";
+}
+
+.div12 {
+  background-color: #17255a;
+  float: left;
+  height: auto;
+  width: 20%;
+  text-align: center;
+  font-family: "arial narrow";
+}
+
+.div13 {
+  background-color: #f5e2c8;
+  float: left;
+  height: auto;
+  width: 20%;
+  text-align: center;
+  font-family: "arial narrow";
+}
+
+.div14 {
+  background-color: #d88373;
+  float: left;
+  height: auto;
+  width: 20%;
+  text-align: center;
+  font-family: "arial narrow";
+}
+
+.div15 {
+  background-color: #bd1e1e;
+  float: left;
+  height: auto;
+  width: 20%;
+  text-align: center;
+  font-family: "arial narrow";
+}
+
+.div2 {
+  font-family: "arial narrow";
+  background-color: black;
+  float: right;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: white;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div21 {
+  font-family: "arial narrow";
+  box-sizing: border-box;
+  background-color: gray;
+  width: 100%;
+
+  float: left;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div22 {
+  font-family: "arial narrow";
+  box-sizing: border-box;
+  background-color: lightgrey;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div31 {
+  background-color: #d88373;
+  float: left;
+  height: auto;
+  width: 33.33%;
+  text-align: center;
+  font-family: "arial narrow";
+  margin: 15px;
+  padding: 15px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div32 {
+  background-color: #d88373;
+  float: left;
+  height: auto;
+  width: 33.33%;
+  text-align: center;
+  font-family: "arial narrow";
+  margin: 15px;
+  padding: 15px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div33 {
+  background-color: #d88373;
+  float: left;
+  height: auto;
+  width: 33.33%;
+  text-align: center;
+  font-family: "arial narrow";
+  margin: 15px;
+  padding: 15px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.thirdrow {
+  display: flex;
+}
+
+.div4 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div5 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div6 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div7 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: darkslategrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div8 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: lightgrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div9 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div10 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: gainsboro;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.div40 {
+  font-family: "arial narrow";
+  width: 100%;
+  background-color: lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
